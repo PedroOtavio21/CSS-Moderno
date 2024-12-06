@@ -1,0 +1,32 @@
+body {
+    background-color: #2c2c2d;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex; /* Ativa a propriedade Flex no CSS*/
+    flex-direction: row; /* Altera a direção e disposição dos itens*/
+    /* justify-content: ; */
+}
+
+.box {
+    background-color: #4547c7;
+    border: 2px solid #272727;
+    height: 10rem;
+    width: 10rem;
+}
+
+.red {
+    background-color: #ff665c;
+}
+
+.yellow {
+    background-color: #f9ff58;
+    height: 20rem;
+}
+
+.blue {
+    background-color: #5255eb;
+    height: 15rem;
+}

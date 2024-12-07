@@ -1,0 +1,118 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary: #ff575f;
+    --color-secondary: #396a4d;
+    --test-color: #ffd74f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Padronização da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header a {
+    color: var(--color-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: hover;
+}
+
+.bg-img {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+main h2 {
+    color: var(--color-primary);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 3px 3px var(--color-black);
+    /* Hor Vert Espalhamento Cor */
+    -webkit-text-stroke: 1px var(--color-black); 
+    /*Adiciona uma leve borda nas letras*/
+}
+
+.call-to-action{
+    display: flex;
+    gap: 2rem;
+}
+
+.call-to-action a {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-white);
+    border-radius: .5rem;
+    color: var(--color-white);
+    font-weight: 700;
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.call-to-action a:hover {
+    background-color: var(--test-color);
+    border: 2px solid var(--color-primary);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: .75rem 1rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+footer > nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+}
+
+footer a{
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

@@ -7,7 +7,9 @@ body {
 .flex-container{
     display: flex; /* Ativa a propriedade Flex no CSS*/
     flex-direction: row; /* Altera a direção e disposição dos itens*/
-    /* justify-content: ; */
+    justify-content: center; /*Alinha os itens ao longo do eixo principal*/
+    align-items: center; /*Alinha os items ao longo do eixo perpendicular*/
+    gap: 1rem; /*Espaçamento entre os itens no container*/
 }
 
 .box {

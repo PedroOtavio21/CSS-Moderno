@@ -1,0 +1,14 @@
+/* Variáveis */
+:root {
+    --background-color: #2c2c2f;
+    --text-color: #f6fef9;
+    --primary-color: #34d0ac;
+}
+
+/* Padronização de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}

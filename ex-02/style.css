@@ -16,6 +16,10 @@ body {
     padding: 1rem 2rem;
 }
 
+h1 {
+    margin-bottom: .75rem;
+}
+
 .galery {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +31,7 @@ body {
     flex: 1 1 12rem;
     height: 12rem;
     width: 12rem;
-    object-fit: cover; /* Corrige a distorção das imagens */
-    /* aspect-ratio: 1 / 1; Define uma razão entre largura e altura */
+    object-fit: cover; 
+    /* Define uma razão entre largura e altura */
+    /* aspect-ratio: 1 / 1;  */
 }

@@ -46,3 +46,8 @@ Imagens de referência
 <img src="https://assets-v2.circle.so/317oxs0abwxl32dtrfaz0jfbssnf">
 
 <img src="https://assets-v2.circle.so/51qk77al7wiu3ozkd5aqs9unw33d">
+
+## Comentários
+1. Sempre que estiver com dificuldades em execução de exercícios, não corra direto para a resolução! Procure "quebrar" o problema em "pequenos objetivos" a serem conquistados!
+
+2. Peça ao chatgpt para explicar se o seu código está no caminho correto da solução

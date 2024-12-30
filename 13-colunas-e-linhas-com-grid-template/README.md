@@ -4,11 +4,11 @@ Nesta aula, veremos uma forma mais simplificada e bastante útil de se estilizar
 ## grid-template
 Propriedade que sempre deverá ser utilizado no elemento pai, ou seja, no `grid-container`
 
-Basicamente, funciona como uma espécie de esquema de colunas ou linhas a serem pré-definidas em seus valores. Ele basicamente é dividido em duas opções:
-
 **Nota:** Utilize em conjunto com as propriedades `grid-row` e `grid-column` para melhor eficácia no posicionamento dos itens no grid container!
 
 **Nota:** Na aula, foi visto um estra em relação aos valores nas propriedades `grid row` e `grid column`. Caso você queria que um elemento prencha todo o espaço de uma determinada área dentro do container, utilize o valor `span` seguido da coluna ou linha a ser ocupada!
+
+Basicamente, funciona como uma espécie de esquema de colunas ou linhas a serem pré-definidas em seus valores. Ele basicamente é dividido em duas opções:
 
 ### grid-template-columns
 Define o esquema a ser utilizado pelas colunas do grid!
@@ -23,3 +23,4 @@ Há diversas formas de se definir valores do `grid-template` no css. Dentre elas
 - N valores (visto acima, onde você escolhe valores quaisqueres n vezes, porém acaba por ficar um pouco trabalhoso)
 - Com frações, ou "frames", porém acaba ficando repetindo como acima
 - Utilizando o método `repeat()`, onde você indica a quantidade seguida do valor a ser repetido
+- Utilizando o método `minmax()`, você definirá um valor **mínimo** e **máximo** do tamanho de uma **linha** ou **coluna**, ou seja, responsividade aplicada!

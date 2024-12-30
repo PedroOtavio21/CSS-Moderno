@@ -156,6 +156,6 @@ Recrie o layout da página abaixo usando o CSS Grid Display e tendo como referê
 Segue abaixo o cronograma de solução para o exercício 3 do módulo
 - Entender o documento html do exercício [x]
 - Padronizar estilo de documento [x]
-- Estilizar fundo e textos utilizados ao decorrer do documento []
-- Centralizar conteúdo de página []
-- Dividir o conteúdo da página em 3, com seus respectivos tamanhos []
+- Estilizar fundo e textos utilizados ao decorrer do documento [x]
+- Centralizar conteúdo de página [x]
+- Dividir o conteúdo da página em 3, com seus respectivos tamanhos [x]

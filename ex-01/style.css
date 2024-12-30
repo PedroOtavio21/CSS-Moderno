@@ -21,10 +21,11 @@ header {
     align-items: center;
     padding: 1rem 4rem;
     background-color: rgba(255, 255, 255, 0.75);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+
+    position: fixed; /* Posicina o elemento para sempre permanecer no topo da página */
+    top: 0; /* Garante o posicionamento do cabeçalho no topo da página */
+    width: 100%; /* Organiza o cabeçalho da página para ocupar toda a área de visualização horizontal */
+    z-index: 10; /* Garante que o cabeçalho esteja à frente dos demais conteúdos da página */
 }
 
 header > nav {
@@ -47,7 +48,7 @@ header a:hover{
 .bg-img {
     width: 100%;
     min-height: 100vh;
-    object-fit: cover;
+    object-fit: cover; /* Ajusta a visualização da imagem principal do documento html */
 }
 
 main {
@@ -57,7 +58,7 @@ main {
     justify-content: center;
     min-height: 100vh;
     min-width: 100%;
-    position: absolute;
+    position: absolute; /* Alinha a imagem e o conteúdo principal para que permaneçam no início da página */
     top: 0;
     text-align: center;
 }
@@ -66,10 +67,10 @@ main h2 {
     color: var(--color-primary);
     font-size: 3.5rem;
     margin-bottom: 2rem;
+    /* text-shadow: Hor Vert Espalhamento Cor; */
     text-shadow: 0 3px 3px var(--color-black);
-    /* Hor Vert Espalhamento Cor */
+    /* Adiciona uma borda simples nas letras do título */
     -webkit-text-stroke: 1px var(--color-black); 
-    /*Adiciona uma leve borda nas letras*/
 }
 
 .call-to-action{
@@ -96,7 +97,9 @@ main h2 {
 footer {
     background-color: rgba(0, 0, 0, 0.75);
     padding: .75rem 1rem;
-    position: fixed;
+
+    /* Posiciona o rodapé para ficar posicionado no canto inferior esquerdo, de forma "Fixada" */
+    position: fixed; 
     right: 0;
     bottom: 0;
 }

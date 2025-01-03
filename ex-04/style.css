@@ -2,44 +2,48 @@
 :root {
     --black-color: #2c2c2d;
     --white-color: #fff;
+    --grey-color-300: #e0e0e0;
+    --grey-color-500: #a5a5a5;
+    --grey-color-700: #777;
     --primary-color: #4c6daf;
-    --secondary-color: #e0e0e0;
-}
 
-/* Padronização de CSS */
+    --padding-sm: 1rem;
+    --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    --border-radius: .5rem;
+} 
+
+/* Padronização de estilos */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: var(--color-light);
-    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
     min-height: 100vh;
 
     display: grid;
     grid-template-columns: 16rem 1fr;
     grid-template-rows: 4rem 1fr 3rem;
     grid-template-areas: 
-    "header  header"
-    "sidebar content"
+    "header header"
+    "sidebar main-content"
     "sidebar footer";
 }
 
 header {
     background-color: var(--primary-color);
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: var(--padding-sm);
     grid-area: header;
-    padding: 0 1rem;
-    display: grid;
-    align-content: center;
 }
 
 .sidebar {
     background-color: var(--black-color);
-    padding: 2rem;
+    /* padding: 1rem 0; */
     grid-area: sidebar;
 }
 
@@ -47,43 +51,45 @@ header {
     list-style: none;
 }
 
-.sidebar li {
-    margin-bottom: 1rem;
-}
-
-.sidebar a {
-    color: var(--secondary-color);
+.sidebar a{
+    color: var(--grey-color-300);
+    display: block;
+    padding: 1rem 2rem;
     text-decoration: none;
 }
 
 .sidebar a:hover {
-    text-decoration: underline;
-    color: var(--primary-color);
+    background-color: #666;
 }
 
 .content {
-    grid-area: content;
+    background-color: var(--grey-color-300);
+    padding: var(--padding-sm);
+    grid-area: main-content;
     display: grid;
     align-content: start;
     gap: 2rem;
-    padding: 2rem;
-    background-color: var(--secondary-color);
 }
 
 .stats-section {
     display: grid;
-    gap: 2rem;
+    grid-template-columns: repeat(4, max-content);
     align-items: start;
     justify-items: start;
-    grid-template-columns: repeat(4, max-content);
+    gap: 2rem;
+}
+
+.card,
+.chart-section,
+.table-section {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: var(--padding-sm);
 }
 
 .card {
-    background-color: var(--white-color);
-    padding: 1rem;
     text-align: center;
-    border-radius: .5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -94,35 +100,29 @@ header {
 .card p {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--black-color);
 }
 
 .chart-section h2,
-.table-section h2 {
-    margin-bottom: 1rem;
-}
-
-.chart-section {
-    background-color: var(--white-color);
-    border-radius: .5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-}
-
-.chart-placeholder {
-    background-color: #b9b9b9;
-    color: #686868;
-    display: grid;
-    place-content: center;
-    height: 12rem;
+.table-section h2{
+    margin-bottom: var(--padding-sm);
 }
 
 .charts {
     display: grid;
-    gap: 1rem;
     grid-template-areas: 
     "chart1 chart2 chart3"
     "chart4 chart4 chart4";
+    height: 20rem;
+    gap: 1rem;
+}
+
+.chart-placeholder {
+    background-color: var(--grey-color-500);
+    color: var(--black-color);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: var(--border-radius);
 }
 
 #chart1 {
@@ -141,34 +141,28 @@ header {
     grid-area: chart4;
 }
 
-.table-section {
-    background-color: var(--white-color);
-    border-radius: .5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-}
-
 table {
     border-collapse: collapse;
     width: 100%;
 }
 
-table th, 
+table th,
 table td {
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 1rem;
+  border-bottom: 1px solid var(--grey-color-300);
+  padding: var(--padding-sm);
 }
 
 table th {
-    text-align: start;
     background-color: var(--primary-color);
     color: var(--white-color);
+    text-align: left;
 }
 
 footer {
-    grid-area: footer;
     background-color: var(--primary-color);
     color: var(--white-color);
     display: grid;
-    place-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-area: footer;
 }

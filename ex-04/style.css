@@ -1,0 +1,174 @@
+/* Variáveis */
+:root {
+    --black-color: #2c2c2d;
+    --white-color: #fff;
+    --primary-color: #4c6daf;
+    --secondary-color: #e0e0e0;
+}
+
+/* Padronização de CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: 4rem 1fr 3rem;
+    grid-template-areas: 
+    "header  header"
+    "sidebar content"
+    "sidebar footer";
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    grid-area: header;
+    padding: 0 1rem;
+    display: grid;
+    align-content: center;
+}
+
+.sidebar {
+    background-color: var(--black-color);
+    padding: 2rem;
+    grid-area: sidebar;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 1rem;
+}
+
+.sidebar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    align-content: start;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.stats-section {
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+    justify-items: start;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+}
+
+.card p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.chart-section h2,
+.table-section h2 {
+    margin-bottom: 1rem;
+}
+
+.chart-section {
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.chart-placeholder {
+    background-color: #b9b9b9;
+    color: #686868;
+    display: grid;
+    place-content: center;
+    height: 12rem;
+}
+
+.charts {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "chart1 chart2 chart3"
+    "chart4 chart4 chart4";
+}
+
+#chart1 {
+    grid-area: chart1;
+}
+
+#chart2 {
+    grid-area: chart2;
+}
+
+#chart3 {
+    grid-area: chart3;
+}
+
+#chart4 {
+    grid-area: chart4;
+}
+
+.table-section {
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, 
+table td {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 1rem;
+}
+
+table th {
+    text-align: start;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: grid;
+    place-content: center;
+}

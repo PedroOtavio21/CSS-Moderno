@@ -1,0 +1,22 @@
+/* Variáveis */
+:root {
+    --color-gray: #e0e0e0;
+    --color-white: #ffffff;
+    --color-dark: #2c2c2e;
+    --color-black: #070707;
+    --color-primary: #6c63ff;
+}
+
+/* Padronização de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização para dispositivos móveis */
+body {
+    background-color: var(--color-gray);
+    color: var(--color-black);
+    font-family: Arial, Helvetica, sans-serif;
+}

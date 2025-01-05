@@ -131,6 +131,10 @@ body {
     text-align: center;
 }
 
+.newsletter-image {
+    text-align: center;
+}
+
 .newsletter-image img{
     width: 75%;
 }
@@ -177,7 +181,7 @@ footer {
     gap: var(--padding-sm);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .speakers-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -198,6 +202,15 @@ footer {
 
     form .btn {
         justify-self: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero,
+    .speakers,
+    .schedule,
+    .newsletter {
+        padding: 4rem;
     }
 }
 

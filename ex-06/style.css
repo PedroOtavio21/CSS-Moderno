@@ -176,3 +176,48 @@ footer {
     align-items: center;
     gap: var(--padding-sm);
 }
+
+@media screen and (min-width: 769px) {
+    .speakers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-grid {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: start;
+        text-align: left;
+    }
+
+    .newsletter-image {
+        place-self: center;
+    }
+
+    form .btn {
+        justify-self: start;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+    }
+
+    .speaker-card,
+    .schedule-item {
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    .newsletter-text p {
+        color: var(--color-gray);
+    }
+
+    .form-group input {
+        background-color: var(--color-black);
+    }
+}
